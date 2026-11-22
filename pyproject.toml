@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langgraph-phm-guard"
+version = "0.1.0"
+description = "Deterministic physics/bounds tool-call guard for LangGraph ToolNode (wrap_ interceptor, no LLM in the judging path)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "PHM-Audit" }]
+dependencies = ["langgraph>=1.2", "langchain-core>=0.3"]
+
+[project.urls]
+Homepage = "https://github.com/PHM-Audit/langgraph-phm-guard"
+
+[tool.setuptools.packages.find]
+where = ["src"]
